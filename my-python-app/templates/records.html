@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Records</title></head>
+<body>
+  <h2>Submitted Records</h2>
+  <table border="1">
+    <tr><th>Name</th><th>Email</th><th>Message</th></tr>
+    {% for row in submissions %}
+    <tr><td>{{ row[0] }}</td><td>{{ row[1] }}</td><td>{{ row[2] }}</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
